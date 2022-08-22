@@ -1,0 +1,122 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__toogle{
+        display: none;
+        position: relative;
+        width: 30px;
+    
+    &::before{
+        width: 30px;
+        content: "";
+        height: 5px;
+        top: 5px;
+        background-color: black;
+        position: absolute;
+    }
+    span{
+        margin-top: 5px;
+        background-color: black;
+        width: 30px;
+        height: 5px;
+        top: 10px;
+        position: absolute;
+    }
+    &::after{
+        content: "";
+        width: 30px;
+        height: 5px;
+        top: 25px;
+        background-color: black;
+        position: absolute;
+    }  
+        
+    }
+    &__left{
+display: flex;
+align-items: center;
+    }
+    &__nav{
+        display: flex;
+    }
+    &__item{
+        list-style: none;
+      
+        a{
+            text-decoration: none;
+            color:  #9f9f9f;
+            margin: 25px;
+        }
+        a:active{
+            font-size: 13px;
+line-height: 15px;
+color:black ;
+        }
+    }
+    &__btn{
+        width: 146px;
+        height: 40px;
+        background-color: white;
+        border: 1.5px solid #2C2830;
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    &__btn:active{
+background: #2C2830;
+border: 1.5px solid #2C2830;
+color:#FFFFFF;
+    }
+}
+@media screen and (max-width:375px){
+    .header{
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+&__left{
+    width: 350px;
+    height: 587px;
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    background-color: #2C2830;
+}
+&__nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+a{
+    color: white;
+}
+ 
+}
+&__item{
+    margin: 20px;
+    margin-left: -20px;
+}
+&__btn{
+    background-color: #2C2830;
+    border:2px solid white;
+    color: white;
+    width: 300px;
+}
+&__toogle{
+    display: flex;
+margin-top: -30px;
+&:active~.header__left { 
+    width: 350px;
+    height: 587px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2C2830;
+}
+}
+    }
+}

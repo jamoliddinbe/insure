@@ -1,0 +1,57 @@
+.different{
+    width: 100%;
+    margin-top: 350px;
+    hr{
+        width: 150px;
+        height: 1px;
+        background-color: #C396C6;
+     margin-left: 60px;
+    }
+    h1{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 64px;
+margin-left: 50px;
+    }
+    h3{
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 38px;
+letter-spacing: -0.388889px;
+    }
+    p{
+        color:  #837D88;
+    }
+    &__boxes{
+display: flex;
+justify-content: space-around;
+    }
+    &__sample{
+        width: 25%;
+        height: 250px;
+    }
+}
+@media screen and (max-width:375px){
+    .different{
+        display: flex;
+        flex-wrap: wrap;
+        hr{
+            margin-left: 120px;
+        }
+        h1{
+            font-size: 36px;
+            margin-left: 70px;
+        }
+        &__boxes{
+            flex-wrap: wrap;
+        }
+&__sample{
+text-align: center;
+ width: 375px;
+}
+    }
+}
